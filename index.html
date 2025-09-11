@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n-title>Silas Oliveira — Desenvolvedor GIS</title>
+    <meta name="description" content="Profissional de GIS com 12+ anos, focado em soluções GIS open-source. Consultoria, automação e WebGIS." data-i18n-meta-description />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://silasogis.com" />
+    <meta property="og:title" content="Silas Oliveira — Desenvolvedor GIS" data-i18n-og-title />
+    <meta property="og:description" content="Profissional de GIS com 12+ anos, focado em soluções GIS open-source. Consultoria, automação e WebGIS." data-i18n-og-description />
+    <meta property="og:image" content="/assets/og-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Silas Oliveira — Desenvolvedor GIS" data-i18n-twitter-title />
+    <meta name="twitter:description" content="Profissional de GIS com 12+ anos, focado em soluções GIS open-source. Consultoria, automação e WebGIS." data-i18n-twitter-description />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='24' fill='%23073b4c'/%3E%3Cpath d='M28 92L64 36l36 56' stroke='%23fff' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='64' cy='36' r='8' fill='%23ffd166'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Home">silasogis</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about" data-i18n="nav.about">Sobre</a>
+          <a href="#skills" data-i18n="nav.skills">Tecnologias</a>
+          <a href="#learning" data-i18n="nav.learning">Estudos</a>
+          <a href="#contact" data-i18n="nav.contact">Contato</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button id="lang-pt" class="lang-btn active" aria-pressed="true">PT</button>
+          <button id="lang-en" class="lang-btn" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1><span data-i18n="hero.name">Silas Oliveira</span></h1>
+            <p class="tagline" data-i18n="hero.tagline">Desenvolvedor GIS e Especialista em Geoprocessamento</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#contact" data-i18n="cta.contact">Fale comigo</a>
+              <a class="btn ghost" href="https://www.linkedin.com/in/silas-oliveira-41a633186/" target="_blank" rel="noopener noreferrer" data-i18n="cta.linkedin">LinkedIn</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="globe"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 data-i18n="about.title">Sobre mim</h2>
+          <p data-i18n="about.text">
+            Sou profissional de GIS com mais de 12 anos de experiência, atualmente focado no desenvolvimento de soluções GIS de código aberto. Minha carreira abrange setores diversos, incluindo sociedade civil, administração pública e empresas privadas. Estou cursando Análise e Desenvolvimento de Sistemas na UNINTER, aprofundando meus conhecimentos em programação e desenvolvimento de sistemas.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 data-i18n="skills.title">Tecnologias e Ferramentas</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>GIS</h3>
+              <ul>
+                <li>QGIS</li>
+                <li>ArcGIS Pro</li>
+                <li>PostGIS</li>
+                <li>GDAL</li>
+                <li>GRASS</li>
+                <li>SAGA GIS</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3 data-i18n="skills.geoanalysis">Análise Geoespacial</h3>
+              <ul>
+                <li data-i18n="skills.items.remote">Sensoriamento remoto</li>
+                <li data-i18n="skills.items.mapping">Mapeamento</li>
+                <li data-i18n="skills.items.spatialModeling">Modelagem espacial</li>
+                <li data-i18n="skills.items.changeDetection">Detecção de mudanças</li>
+                <li data-i18n="skills.items.geocoding">Geocodificação</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3 data-i18n="skills.databases">Bancos de dados</h3>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+                <li>GeoPackage</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3 data-i18n="skills.servers">Servidores GIS</h3>
+              <ul>
+                <li>GeoServer</li>
+                <li>MapServer</li>
+                <li>QGIS Server</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Webmapping</h3>
+              <ul>
+                <li>Leaflet</li>
+                <li>OpenLayers</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3 data-i18n="skills.programming">Programação</h3>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Java</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learning" class="section">
+        <div class="container">
+          <h2 data-i18n="learning.title">O que estou estudando</h2>
+          <p data-i18n="learning.text">
+            Atualmente, estou me aprofundando em Machine Learning aplicado ao geoprocessamento, especificamente na delimitação de áreas úmidas com redes neurais U-Net e processamento de imagens multiespectrais.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div class="contact-text">
+            <h2 data-i18n="contact.title">Vamos conversar!</h2>
+            <p data-i18n="contact.text">
+              Se você tem interesse em colaborar, discutir ideias ou contratar serviços de consultoria GIS, automação de processos ou desenvolvimento WebGIS, entre em contato.
+            </p>
+            <div class="contact-links">
+              <a class="btn primary" href="mailto:soliveira796@gmail.com" data-i18n="contact.emailCta">Enviar e-mail</a>
+              <a class="btn" href="https://www.linkedin.com/in/silas-oliveira-41a633186/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <div class="contact-inline">
+              <p><strong>Email:</strong> <a href="mailto:soliveira796@gmail.com">soliveira796@gmail.com</a></p>
+              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/silas-oliveira-41a633186/" target="_blank" rel="noopener noreferrer">linkedin.com/in/silas-oliveira-41a633186</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> <span>Silas Oliveira</span>. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
 <h1>Consultoria em Geoprocessamento e SIG</h1>
