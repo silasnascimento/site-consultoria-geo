@@ -13,16 +13,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate required configuration
+        env:
+          SERVER: ${{ secrets.FTP_SERVER || vars.FTP_SERVER }}
+          USERNAME: ${{ secrets.FTP_USERNAME || vars.FTP_USERNAME }}
+          PASSWORD: ${{ secrets.FTP_PASSWORD || vars.FTP_PASSWORD }}
+          SERVER_DIR: ${{ secrets.FTP_SERVER_DIR || vars.FTP_SERVER_DIR }}
+          PORT: ${{ secrets.FTP_PORT || vars.FTP_PORT || 21 }}
+        run: |
+          missing=false
+          for var in SERVER USERNAME PASSWORD SERVER_DIR; do
+            if [ -z "${!var}" ]; then
+              echo "::error::Missing required configuration: $var (set as Secret or Variable)";
+              missing=true
+            fi
+          done
+          if [ "$missing" = true ]; then exit 1; fi
+
       - name: Deploy to Hostinger (FTPS)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT || 21 }}
+          server: ${{ secrets.FTP_SERVER || vars.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME || vars.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD || vars.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || vars.FTP_PORT || 21 }}
           protocol: ftps
           local-dir: ./
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR || vars.FTP_SERVER_DIR }}
           exclude: |
             **/.git*
             **/.github/**
