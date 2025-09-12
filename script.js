@@ -28,9 +28,9 @@
         },
       },
       learning: {
-        title: 'O que estou estudando',
+        title: 'Suporte de SIG de código aberto',
         text:
-          'Atualmente, estou me aprofundando em Machine Learning aplicado ao geoprocessamento, especificamente na delimitação de áreas úmidas com redes neurais U-Net e processamento de imagens multiespectrais.',
+          'Ofereço pacotes de suporte pré-pagos e dedicados para vários softwares GIS de código aberto, incluindo PostgreSQL, PostGIS, Geoserver, QGIS, PGAdmin4 e muito mais.',
       },
       contact: {
         title: 'Vamos conversar!',
@@ -68,9 +68,9 @@
         },
       },
       learning: {
-        title: 'What am I learning?',
+        title: 'Open Source GIS Support',
         text:
-          "Currently, I'm diving deeper into Machine Learning applied to geoprocessing, specifically in wetland delineation with U-Net neural networks and multispectral image processing.",
+          "I offer prepaid and dedicated support packages for various open-source GIS software, including PostgreSQL, PostGIS, Geoserver, QGIS, PGAdmin4 and much more.",
       },
       contact: {
         title: "Let's chat!",
