@@ -185,6 +185,53 @@ a { color: inherit; text-decoration: none; }
 
 .footer-inner { text-align: center; color: var(--muted); }
 
+/* Estilos para a nova seção de Projeto Destaque */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.project-details h3 {
+  font-size: 22px;
+  color: var(--accent-2);
+  margin: 0 0 12px;
+}
+
+.project-details h4 {
+  font-size: 16px;
+  margin: 20px 0 8px;
+  font-weight: 600;
+}
+
+.project-details p {
+  color: var(--muted);
+}
+
+.tech-list {
+  padding-left: 18px;
+  color: var(--muted);
+  list-style-type: '✓  '; /* Adiciona um ícone de check */
+  columns: 2;
+  gap: 10px;
+}
+
+.tech-list li {
+  padding-bottom: 4px;
+}
+
+.project-visual {
+  text-align: center;
+}
+
+.project-image {
+  max-width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 @media (min-width: 760px) {
   .nav { display: flex; }
   .hero {
@@ -198,5 +245,9 @@ a { color: inherit; text-decoration: none; }
   .tagline { font-size: 20px; }
 
   .skills-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  
+  .project-grid {
+    grid-template-columns: 1.1fr 0.9fr; /* Coluna de texto um pouco maior */
+    gap: 40px;
+  }
 }
-
