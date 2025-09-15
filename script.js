@@ -5,13 +5,13 @@
       title: 'Silas Oliveira — Desenvolvedor GIS',
       metaDescription:
         'Profissional de GIS com 12+ anos, focado em soluções GIS open-source. Consultoria, automação e WebGIS.',
-      nav: { about: 'Sobre', skills: 'Tecnologias', learning: 'Estudos', contact: 'Contato' },
+      nav: { about: 'Sobre', skills: 'Tecnologias', learning: 'Suporte GIS', contact: 'Contato' },
       hero: { name: 'Silas Oliveira', tagline: 'Desenvolvedor GIS e Especialista em Geoprocessamento' },
       cta: { contact: 'Fale comigo', linkedin: 'LinkedIn' },
       about: {
         title: 'Sobre mim',
         text:
-          "Sou profissional de GIS com mais de 12 anos de experiência, atualmente focado no desenvolvimento de soluções GIS de código aberto. Minha carreira abrange setores diversos, incluindo sociedade civil, administração pública e empresas privadas. Estou cursando Análise e Desenvolvimento de Sistemas na UNINTER, aprofundando meus conhecimentos em programação e desenvolvimento de sistemas.",
+          "Sou profissional de GIS com mais de 12 anos de experiência, focado no desenvolvimento de soluções GIS de código aberto. Minha carreira abrange setores diversos, incluindo sociedade civil, administração pública e empresas privadas. Forneço consultoria, suporte e desenvolvimento de soluções GIS de código aberto.",
       },
       skills: {
         title: 'Tecnologias e Ferramentas',
@@ -45,13 +45,13 @@
       title: 'Silas Oliveira — GIS Developer',
       metaDescription:
         'GIS specialist with 12+ years, focused on open-source GIS. Consulting, automation, and WebGIS.',
-      nav: { about: 'About', skills: 'Tech', learning: 'Learning', contact: 'Contact' },
+      nav: { about: 'About', skills: 'Tech', learning: 'GIS Support', contact: 'Contact' },
       hero: { name: 'Silas Oliveira', tagline: 'GIS Developer & Geospatial Specialist' },
       cta: { contact: "Let's chat", linkedin: 'LinkedIn' },
       about: {
         title: 'About me',
         text:
-          "I'm a GIS specialist with over 12 years of experience, currently focused on developing open-source GIS solutions. My career spans diverse sectors, including civil society, public administration, and private companies. I'm currently pursuing a degree in Systems Analysis and Development at UNINTER, deepening my knowledge of programming and systems development.",
+          "I'm a GIS professional with over 12 years of experience, focused on developing open-source GIS solutions. My career spans diverse sectors, including civil society, public administration, and private companies. I provide consulting, support, and development of open-source GIS solutions.",
       },
       skills: {
         title: 'Technologies & Tools',
