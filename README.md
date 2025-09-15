@@ -6,47 +6,29 @@ Site estático bilíngue para divulgação profissional como Desenvolvedor GIS.
 
 Abra o `index.html` no navegador. Os estilos e scripts estão em `styles.css` e `script.js`.
 
-## Deploy automático na Hostinger (FTP)
+## Deploy automático na Hostinger
 
-Este repositório inclui um workflow do GitHub Actions que envia os arquivos via FTP/FTPS para a Hostinger quando você fizer push na branch `main`.
+Este site está configurado para deploy automático através da funcionalidade integrada do Hostinger que conecta diretamente com o repositório Git.
 
-### Passo 1 — Criar conta FTP na Hostinger
+### Configuração atual
 
-- No hPanel: Sites (ou Websites) → Gerenciar → Arquivos → Contas FTP (ou FTP Accounts)
-- Crie uma conta FTP dedicada para o domínio `silasogis.com`
-- Anote:
-  - **Servidor/Host** (ex.: `ftp.hostinger.com` ou host específico do seu plano)
-  - **Usuário** e **Senha** da conta FTP
-  - **Diretório raiz do site**:
-    - Geralmente `public_html/`
-    - Em alguns planos: `domains/silasogis.com/public_html/`
+- **Deploy automático**: Configurado via hPanel do Hostinger
+- **Repositório**: Conectado diretamente ao GitHub
+- **Branch**: `main`
+- **Trigger**: Push automático quando há commits na branch principal
 
-### Passo 2 — Configurar Secrets no GitHub
-
-No repositório → Settings → Secrets and variables → Actions → New repository secret. Adicione:
-
-- `FTP_SERVER`: host do FTP (ex.: `ftp.hostinger.com`)
-- `FTP_USERNAME`: usuário FTP
-- `FTP_PASSWORD`: senha FTP
-- `FTP_PORT`: `21`
-- `FTP_SERVER_DIR`: diretório remoto alvo, por exemplo:
-  - `/public_html/` (padrão)
-  - ou `/domains/silasogis.com/public_html/` (se aplicável)
-
-O workflow usa FTPS (explícito). Se o seu plano não suportar FTPS, mude `protocol: ftps` para `ftp` no arquivo `.github/workflows/deploy.yml`.
-
-### Passo 3 — Estrutura do repositório
+### Estrutura do repositório
 
 - `index.html`
 - `styles.css`
 - `script.js`
-- `.github/workflows/deploy.yml`
+- `README.md`
 
-### Passo 4 — Publicar
+### Publicar alterações
 
 - Faça commit e push para `main`
-- Acompanhe a execução em: Actions → "Deploy to Hostinger via FTP"
-- Após sucesso, aguarde alguns minutos e acesse `https://silasogis.com`
+- O deploy acontece automaticamente via Hostinger
+- Aguarde alguns minutos e acesse `https://silasogis.com`
 
 ## DNS do domínio `silasogis.com`
 
@@ -65,10 +47,9 @@ Garanta que o domínio aponta para a Hostinger:
 
 ## Suporte
 
-Se o deploy falhar, verifique:
+Se o deploy automático falhar, verifique:
 
-- Diretório remoto (`FTP_SERVER_DIR`) correto
-- Credenciais e host FTP
-- Firewall/FTPS no provedor
-- Logs do job em GitHub Actions
+- Conexão do repositório no hPanel do Hostinger
+- Configuração da branch `main`
+- Logs de deploy no painel da Hostinger
 
